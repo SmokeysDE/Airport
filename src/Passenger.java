@@ -14,4 +14,8 @@ public class Passenger {
     public int getTtl() {
         return ttl;
     }
+
+    public void raiseTtl(int add_time) {
+        this.ttl += add_time;
+    }
 }
