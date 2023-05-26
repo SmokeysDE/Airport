@@ -2,10 +2,10 @@ import java.util.*;
 
 public class Hall {
     private int number;
-    private ArrayList<Object> floor;
+    private ArrayList<String> floor;
 
-    public Hall(ArrayList floor, int number) {
-        this.floor = new ArrayList<Object>();
+    public Hall(int number) {
+        this.floor = new ArrayList<String>();
         this.number =  number;
     }
 
@@ -13,7 +13,10 @@ public class Hall {
         return number;
     }
 
-    public ArrayList<Object> getFloor() {
+    public ArrayList<String> getList() {
         return floor;
+    }
+    public int getListSize(){
+        return floor.size();
     }
 }

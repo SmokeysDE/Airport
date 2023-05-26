@@ -18,4 +18,8 @@ public class Passenger {
     public void raiseTtl(int add_time) {
         this.ttl += add_time;
     }
+    public String getPass(){
+        String name = "P" + number;
+        return name;
+    }
 }
