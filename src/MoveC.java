@@ -38,4 +38,8 @@ public class MoveC implements Runnable{
         }
 
     }
+
+    public ArrayList<String> getHall() {
+        return hall2.getList();
+    }
 }

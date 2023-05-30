@@ -18,12 +18,12 @@ public class CheckIn extends Hall {
 
     @Override
     public ArrayList<String> getList() {
-        return super.getList();
+        return check;
     }
 
     @Override
     public int getListSize() {
-        return super.getListSize();
+        return check.size();
     }
     public int getLast(){
         int last = check.size()-1;
