@@ -31,6 +31,8 @@ public class MoveC implements Runnable{
                     break;
                 }
             }
+            Thread tCheck = new Thread(new CheckRnb(hall2.getList()));
+            tCheck.start();
 
                 System.out.println("Halle 1 Passagiere " + pass.getList());
         }catch (InterruptedException e){
@@ -41,5 +43,9 @@ public class MoveC implements Runnable{
 
     public ArrayList<String> getHall() {
         return hall2.getList();
+    }
+    public int getLast() {
+        int last = hall2.getListSize()-1;
+        return last;
     }
 }

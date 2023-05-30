@@ -25,9 +25,9 @@ public class CheckIn extends Hall {
     public int getListSize() {
         return check.size();
     }
-    public int getLast(){
-        int last = check.size()-1;
-        return last;
+
+    public void addList(String passenger){
+        getList().add(passenger);
     }
 }
 
