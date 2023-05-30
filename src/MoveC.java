@@ -19,9 +19,9 @@ public class MoveC implements Runnable{
                     String p = pass.getList().remove(0);
                     for (int j = hall2.getListSize(); j < 10; j++) ;
                     hall2.getList().add(p);
-                    System.out.println("In Halle "+ pass.getHall() +" befinden sich " + /*pass.getList()*/pass.getList().size() + " Passagiere");
+                    System.out.println("In Halle "+ pass.getHall() +" befinden sich " + pass.getList().size() + " Passagiere");
                     t1.sleep(1000);
-                    System.out.println("In Halle "+ hall2.getNumber() +" befinden sich " + /*hall2.getList()*/ hall2.getListSize() + " Passagiere");
+                    System.out.println("In Halle "+ hall2.getNumber() +" befinden sich " + hall2.getListSize() + " Passagiere");
                     t1.sleep(1000);
                     t1.run();
                 }
