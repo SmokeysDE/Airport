@@ -1,12 +1,14 @@
 import java.util.ArrayList;
-import java.util.HashMap;
+
 
 public class CheckRnb implements Runnable {
 
-    MoveC movePassenger = new MoveC();
+    ArrayList<String> halle;
+    int groesse;
+    String last;
+    String first;
+    int lastInt;
 
-    CheckIn check = new CheckIn(1);
-    ArrayList<String> halle = new ArrayList<>();
 
     public CheckRnb(ArrayList<String> halle){
         for (String s : this.halle = halle) {
@@ -17,14 +19,38 @@ public class CheckRnb implements Runnable {
 
     @Override
     public void run() {
-        Thread t1 = new Thread(movePassenger);
         int groesse = halle.size();
-        int last = groesse-1;
-        System.out.println(last);
+        int last = groesse - 1;
         String lastPass = halle.remove(last);
-        System.out.println(lastPass);
+        //String first = halle.remove(0);
+        setLast(groesse, lastPass, first, last);
 
 
+    }
+    public void setLast(int groesse, String lastPass, String first, int lastInt){
+        this.groesse = groesse;
+        this.last = lastPass;
+        this.first = first;
+        this.lastInt = lastInt;
+    }
 
+    public String getLast() {
+        return last;
+    }
+
+    public int getGroesse() {
+        return groesse;
+    }
+
+    public String getFirst() {
+        return first;
+    }
+
+    public ArrayList<String> getList() {
+        return halle;
+    }
+
+    public int getLastInt() {
+        return lastInt;
     }
 }
