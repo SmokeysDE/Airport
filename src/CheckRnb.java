@@ -22,7 +22,6 @@ public class CheckRnb implements Runnable {
         int groesse = halle.size();
         int last = groesse - 1;
         String lastPass = halle.remove(last);
-        //String first = halle.remove(0);
         setLast(groesse, lastPass, first, last);
 
 

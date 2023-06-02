@@ -30,4 +30,3 @@ public class CheckIn extends Hall {
         getList().add(passenger);
     }
 }
-
